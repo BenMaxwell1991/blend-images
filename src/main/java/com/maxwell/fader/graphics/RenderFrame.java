@@ -36,7 +36,7 @@ public class RenderFrame implements Callable<Frame> {
 
         if (index % 5 == 0) {
             System.out.println("ThreadPool Size: " + Thread.activeCount());
-            System.out.println("Thread active: " + Thread.currentThread());
+            System.out.println("Thread active: " + Thread.currentThread().getName());
             System.out.println("Frames completed: " + index + "/" + totalFrames + "\n");
         }
 
